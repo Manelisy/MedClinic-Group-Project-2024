@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @{
+        ViewData["Title"] = "Medical Care Home";
+    }
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-default navbar-fixed-top d-flex flex-wrap">
+            <div class="navbar-brand align-items-center justify-content-center" style="height:75px; margin-right:3px">
+                <img src="~/images/wms logo.png" alt="MedLife Logo" style="width:77px;height:55px" >
+            </div>
+            <div class="container" style="padding-inline:0 !important; padding-block: 0.7rem">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle fixed-right" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand fixed-left" href="#myPage">Medical Care</a>
+                </div>
+                <div class="collapse navbar-collapse fixed-right" id="myNavbar">
+                    <ul class="d-flex align-items-end justify-content-end nav navbar-nav navbar-right">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <partial name="_LoginPartial" />
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+
+</html>
+<footer class="bg-dark text-light pt-4 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Brief description about the company or website.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Home</a></li>
+                    <li><a href="#" class="text-light">About</a></li>
+                    <li><a href="#" class="text-light">Services</a></li>
+                    <li><a href="#" class="text-light">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact us and we'll get back to you within 24 hours.</h5>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Qgeberha, South Africa</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +27 63 250 3425</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> medcare@medeical.ac.za</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>

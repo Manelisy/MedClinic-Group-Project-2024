@@ -1,0 +1,274 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="jumbotron text-center">
+        <h1>Welcome to Medical Care</h1>
+        <p>Taking care of your health.</p>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner p-0">
+
+                    <div class="item active m-0">
+                        <img src="~/css/Screenshot 2024-07-27 181349.png" alt="Los Angeles" style="width:100%;">
+                        <div class="carousel-caption" style=" background-color:mediumpurple; opacity: 0.9; border-radius:50px">
+                            <h3>Admin</h3>
+                            <p>We efficiently manage ward operations, staff schedules, bed allocations, compliance records, and inter-department communication to enhance hospital efficiency and patient care quality.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="item  m-0">
+                        <img src="~/css/Nurse.jpg" alt="patient care" style="width:100%;">
+                        <div class="carousel-caption" style=" background-color:mediumpurple; opacity: 0.9; border-radius:50px">
+                            <h3>Patient Care</h3>
+                            <p>We enhance patient outcomes with personalized care plans, real-time monitoring, and comprehensive treatment protocols.</p>
+                        </div>
+                    </div>
+
+                    <div class="item  m-0">
+                        <img src="~/css/patientManage.jpg" alt="patient management" style="width:100%;">
+                        <div class="carousel-caption" style=" background-color:mediumpurple; opacity: 0.9; border-radius:50px">
+                            <h3>Patient Management</h3>
+                            <p>We seamlessly manage patient admissions, records, appointments, and discharge processes to ensure efficient and high-quality patient care.</p>
+                        </div>
+                    </div>
+
+                    <div class="item  m-0">
+                        <img src="~/css//docPatient.jpg" alt="Doctor patient" style="width:100%;">
+                        <div class="carousel-caption" style=" background-color:mediumpurple; opacity: 0.9; border-radius:50px">
+                            <h3>Doctor Patient</h3>
+                            <p> We facilitate effective communication, consultations, and follow-ups between doctors and patients to ensure comprehensive care.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="item  m-0">
+                        <img src="~/css/consScript.jpg" alt="Consumables and Script" style="width:100%;">
+                        <div class="carousel-caption" style=" background-color:mediumpurple; opacity: 0.9; border-radius:50px">
+                            <h3>Consumables and Script</h3>
+                            <p> We ensure timely restocking and optimal inventory levels of medical supplies, and we Simplify the prescription process for accurate and efficient medication management.</p>
+                        </div>
+                    </div>
+                    <h4></h4>
+
+
+
+
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>About Company Page</h2><br>
+                <h4>We provide compassionate patient care with seamless coordination and to advance medicine through unrivaled education, research, and outreach in the many diverse communities we serve.</h4><br>
+
+                <p>Institutions like Medical Care emphasize core values such as respect, integrity, compassion, healing, teamwork, innovation, excellence, and stewardship. The message here is that patient-centered care is paramount; every action taken within the clinic reflects these values aimed at improving patient outcomes and experiences.</p>
+                <br><button class="btn btn-default btn-lg">Get in Touch</button>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-signal logo"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2>Our Values</h2><br>
+                <h4><strong>MISSION:</strong>To heal, to teach, to discover, and to advance the health of the communities we serve.</h4><br>
+                <p>
+                    <strong>VISION:</strong> The vision includes being creators of positive change within the healthcare system, addressing gaps in service delivery, and adapting to meet evolving community needs..
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Services Section) -->
+    <div id="services" class="container-fluid text-center">
+        <h2>SERVICES</h2>
+        <h4>What we offer</h4>
+        <br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                @*  <span class="glyphicon glyphicon-off logo-small"></span> *@
+                <img src="~/css/Screenshot 2024-07-27 181349.png" class="serv-image" />
+
+                <h4>Administrator</h4>
+                <p>We efficiently manage ward operations, staff schedules, bed allocations, compliance records, and inter-department communication to enhance hospital efficiency and patient care quality.</p>
+                <div class="btn-ReadMore">
+                    <a class="nav-link text-light" asp-area="" asp-controller="" asp-action="">Read More</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="~/css/patient-care.png" class="serv-image" />
+                <h4>Patient Care</h4>
+                <p>We enhance patient outcomes with personalized care plans, real-time monitoring, and comprehensive treatment protocols.</p>
+                <div class="btn-ReadMore">
+                    <a class="nav-link text-light" asp-area="" asp-controller="" asp-action="">Read More</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="~/css/patient management.png" class="serv-image" />
+                <h4>Patient Management</h4>
+                <p>We seamlessly manage patient admissions, records, appointments, and discharge processes to ensure efficient and high-quality patient care.</p>
+                <div class="btn-ReadMore">
+                    <a class="nav-link text-light" asp-area="" asp-controller="FamilyPlanning" asp-action="Index">Read More</a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <img src="~/css/doctor-patient.png" alt="" class="serv-image" />
+                <h4>Doctor Patient</h4>
+                <p>We facilitate effective communication, consultations, and follow-ups between doctors and patients to ensure comprehensive care.</p>
+                <div class="btn-ReadMore">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Labs" asp-action="Index">Read More</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="~/css/CnS.png" alt="" class="serv-image" />
+                <h4>Consumables and Script</h4>
+                <p> We ensure timely restocking and optimal inventory levels of medical supplies, and we Simplify the prescription process for accurate and efficient medication management.</p>
+                <div class="btn-ReadMore">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Labs" asp-action="Index">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <h2>What our patient say</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <h4>"This medical care is the best. I am so happy with the result!"<br><span> Vice President, Comment Box</span></h4>
+            </div>
+            <div class="item">
+                <h4>"One word... WOW!!"<br><span>John Doe</span></h4>
+            </div>
+            <div class="item">
+                <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">CONTACT</h2>
+        <form action="/action_page.php">
+            <div class="row">
+
+                <div class="col-sm-7 slideanim">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
+
+</body>
