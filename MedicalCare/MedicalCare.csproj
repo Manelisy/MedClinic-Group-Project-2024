@@ -5,6 +5,20 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+	
+  
+
+	<ItemGroup>
+		<!-- Include all source assets -->
+		<Content Include="Assets\**\*" />
+	</ItemGroup>
+
+	<Target Name="CopyAssetsToWwwroot" AfterTargets="Build">
+		<!-- Copy CSS -->
+		<Copy SourceFiles="@(Content->'%(FullPath)')"
+			  DestinationFolder="wwwroot\%(RecursiveDir)"
+			  SkipUnchangedFiles="true" />
+	</Target>	
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.24" />
@@ -15,6 +29,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\Images\" />
+    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
 </Project>

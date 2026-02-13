@@ -1,0 +1,328 @@
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+}
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-color: #58568E !important;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.logo-small {
+    color: mediumpurple;
+    font-size: 50px;
+}
+
+.logo {
+    color: mediumpurple;
+    font-size: 200px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: mediumpurple;
+}
+
+.carousel-indicators li {
+    border-color: mediumpurple;
+}
+
+    .carousel-indicators li.active {
+        background-color: mediumpurple;
+    }
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+.panel {
+    border: 1px solid mediumpurple;
+    border-radius: 0 !important;
+    transition: box-shadow 0.5s;
+}
+
+    .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    }
+
+.panel-footer .btn:hover {
+    border: 1px solid mediumpurple;
+    background-color: #fff !important;
+    color: mediumpurple;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: mediumpurple !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: white !important;
+}
+
+    .panel-footer h3 {
+        font-size: 32px;
+    }
+
+    .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+    }
+
+    .panel-footer .btn {
+        margin: 15px 0;
+        background-color: mediumpurple;
+        color: #fff;
+    }
+
+.navbar {
+    margin-bottom: 0;
+    background-color: mediumpurple;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.btn {
+    display: inline-block !important;
+    font-weight: 450;
+    color: #212529 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    user-select: none !important;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    border-radius: 0.25rem !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+.btn-prim {
+    color: #fff !important; /* White text color */
+    background-color: #fff !important; /* White background color */
+    border-color: #f6f6f6 !important; /* Matching gray border */
+}
+
+    .btn-prim:hover {
+        color: #fff !important;
+        background-color: #5a6268 !important; /* Darker gray on hover */
+        border-color: #545b62 !important;
+    }
+
+    .btn-prim:focus, .btn-prim.focus {
+        color: #fff !important;
+        background-color: #5a6268 !important;
+        border-color: #545b62 !important;
+        box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5) !important; /* Adds shadow on focus */
+    }
+
+.rounded-pill {
+    border-radius: 50rem !important; /* A very high border-radius value to make it pill-shaped */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Aligns child elements in a row */
+    flex-wrap: wrap; /* Items wrap onto new lines if needed */
+}
+
+.nav-link {
+    display: block; /* Makes the link behave like a block-level element */
+    padding: 0.5rem 1rem; /* Adds padding to the link */
+    color: #007bff; /* Bootstrap's default link color (blue) */
+    text-decoration: none; /* Removes underline */
+}
+
+    .nav-link:hover, .nav-link:focus {
+        color: #0056b3; /* Darker blue on hover/focus */
+        text-decoration: underline; /* Underline on hover/focus */
+    }
+
+    .nav-link.disabled {
+        color: #6c757d; /* Disabled links are gray */
+        pointer-events: none; /* Disable link interaction */
+    }
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap; /* Allows the flex items to wrap */
+}
+
+.align-items-end {
+    align-items: flex-end; /* Aligns items at the bottom of the container */
+}
+
+.justify-content-end {
+    justify-content: flex-end; /* Aligns items to the right (end) of the container */
+}
+.fixed-left {
+    position: fixed; /* Keeps the element fixed on the screen */
+    left: 100px; /* Fixes the element to the left side of the window */
+    
+}
+.fixed-right {
+    position: fixed; /* Keeps the element fixed on the screen */
+    right: 50px; /* Fixes the element to the left side of the window */
+}
+
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: mediumpurple !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: mediumpurple;
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+.image {
+    transform: translate(2px);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");

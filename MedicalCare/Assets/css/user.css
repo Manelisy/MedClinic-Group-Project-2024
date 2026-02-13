@@ -1,0 +1,208 @@
+﻿*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-top: 0;
+    background-color: #f5f5f4;
+    position: static;
+    min-height: 100%;
+}
+
+.hero-section {
+    margin-top: 0.75rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; /*Ensures the image is on top of the text */
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.375rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-prim {
+    color: #fff !important; /* White text color */
+    background-color: #fff !important; /* White background color */
+    border-color: #f6f6f6 !important; /* Matching gray border */
+}
+
+    .btn-prim:hover {
+        color: #fff !important;
+        background-color: #5a6268 !important; /* Darker gray on hover */
+        border-color: #545b62 !important;
+    }
+
+    .btn-prim:focus, .btn-prim.focus {
+        color: #fff !important;
+        background-color: #5a6268 !important;
+        border-color: #545b62 !important;
+        box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5) !important; /* Adds shadow on focus */
+    }
+
+.rounded-pill {
+    border-radius: 50rem !important; /* A very high border-radius value to make it pill-shaped */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.hero-img {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.hero-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.left-box {
+    max-width: 800px;
+}
+
+    .left-box h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .left-box h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .left-box p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+.btn-getStarted {
+    margin: 10px 0;
+}
+
+.navbar {
+    margin: 0;
+    background-color: mediumpurple !important;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.nav-link {
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+    .nav-link:hover {
+        background-color: #0056b3;
+    }
+
+.bg-hover:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.card-body {
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mybox {
+    background-color: white;
+    border-radius: 8px;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-content: center;
+    padding-bottom: 0;
+}
+
+.serv-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.p-image {
+    width: 100%;
+}
+
+.btn-AddNew .nav-link {
+    padding: 5px 15px;
+    background-color: #3366FF;
+}
+
+    .btn-AddNew .nav-link:hover {
+        background-color: #2c6975;
+    }
+
+.map-location {
+    padding: 40px;
+    text-align: center;
+}
+
+.location {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.bg-purple {
+    background-color: #6666CC !important; /* Set header background to purple */
+    color: white; /* Set text color to white */
+}

@@ -1,0 +1,44 @@
+﻿
+.account-container {
+    background-image: url('../Images/bg-Login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    display: flex;
+    justify-content: left;
+    min-height: 100vh;
+}
+
+.account-box {
+    background-color: dimgray;
+    padding: 30px;
+    border-radius: 0 15px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+.account-box-2 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+.account-box-3 {
+    background-color: #ffffff;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 3px;
+    opacity: 0.9;
+}

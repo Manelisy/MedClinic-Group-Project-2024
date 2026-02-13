@@ -1,0 +1,436 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-color: mediumpurple;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.logo-small {
+    color: mediumpurple;
+    font-size: 50px;
+}
+
+.logo {
+    color: mediumpurple;
+    font-size: 200px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: mediumpurple;
+}
+
+.carousel-indicators li {
+    border-color: mediumpurple;
+}
+
+    .carousel-indicators li.active {
+        background-color: mediumpurple;
+    }
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+.panel {
+    border: 1px solid mediumpurple;
+    border-radius: 0 !important;
+    transition: box-shadow 0.5s;
+}
+
+    .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    }
+
+.panel-footer .btn:hover {
+    border: 1px solid mediumpurple;
+    background-color: #fff !important;
+    color: mediumpurple;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: mediumpurple !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: white !important;
+}
+
+    .panel-footer h3 {
+        font-size: 32px;
+    }
+
+    .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+    }
+
+    .panel-footer .btn {
+        margin: 15px 0;
+        background-color: mediumpurple;
+        color: #fff;
+    }
+
+.navbar {
+    margin-bottom: 0;
+    background-color: mediumpurple;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+    .navbar li a, .navbar .navbar-brand {
+        /*color: #fff !important;*/
+
+    }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: mediumpurple !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: mediumpurple;
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0%
+
+{
+    opacity: 0;
+    transform: translateY(70%);
+}
+
+100% {
+    opacity: 1;
+    transform: translateY(0%);
+   }
+
+}
+
+-webkit-keyframes slide {
+    0%{
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+      }
+
+   100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+}
+
+/*side-panel*/
+.side-panel{
+    width: 30%;
+    height: 100%;
+    background-color: mediumpurple;
+    color: white;
+    align-items: center;
+}
+/*h5,p {
+    text-align: center;
+}*/
+
+button{
+    text-align:center;
+    align-items: center;
+    color: black;
+    border-radius: 15%;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 40%;
+}
+
+.footer-right {
+    width: 40%;
+    text-align: right;
+}
+
+    .footer-left h2, .footer-right h2 {
+        margin-top: 0;
+    }
+
+    .footer-left p, .footer-right p {
+        margin-bottom: 20px;
+    }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left {
+    width: 30%;
+}
+
+.middle {
+    width: 30%;
+}
+
+.right {
+    width: 30%;
+    text-align: right;
+}
+
+    .left h2, .middle h2, .right h2 {
+        margin-top: 0;
+    }
+
+    .left p, .middle p, .right p {
+        margin-bottom: 20px;
+    }
+
+    .sideNav{
+        text-align: left;
+    }
+
+/* Animation */
+/*.image {
+     
+    transform: translateY(2px);
+    animation: pulse 2s infinite;
+    transition: 0.5s ease;
+}*/
+
+.image {
+    
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+} 
+
+@keyframes pulse {  
+ 0%{
+    transform: scale(1);
+ }
+
+ 50% {
+      transform: scale(1.1);
+ }
+
+ 100% {
+      transform: scale(1);
+ }
+
+}
+
+/*Slide animation*/
+.container {
+    padding: 20px;
+    animation: slide-up 2s ease; /* animate slide-up effect */
+}
+
+.container {
+        margin-bottom: 20px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.back.animate {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated-button.animate {
+    transform: translateY(2px);
+    animation: pulse 2s infinite;
+}
+
+.animated-button {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%
+
+{
+    transform: scale(1);
+}
+
+50% {
+    transform: scale(1.1);
+}
+
+100% {
+    transform: scale(1);
+}
+
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
